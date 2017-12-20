@@ -1,41 +1,108 @@
 <!doctype html>
-<html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width", initial-scale=1">
-	<title> MoonRaven Rabbitry - About Us </title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> MoonRaven Rabbitry - Home </title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
-<header>
-	<img src="img/banner.png" alt="MoonRaven Rabbitry" id="banner">
-	<h1> An ethical, educational, and eco-friendly rabbitry created and run with love and respect for rabbits.</h1>
-		<nav>
-			<div class="dropdown">
-				<button id="myBtn" class="dropbtn"><img src="img/NavIcon.png"/></button>
-				<div id="myDropdown" class="dropdown-content">
-					<a href="index.html">Home</a>
-					<a href="about.html"> About Us </a>
-					<a href="gallery.html">Gallery </a>
-					<a href="sale.html">Rabbits for Sale </a>
-					<a href="contact.html">Contact Us </a>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-md visible-lg">
+						<div id="mrr-logo"></div>
+					</a>
+					<div class="navbar-brand">
+						<a href="index.html"><h1>MoonRaven Rabbitry</h1></a>
+						<p class="text-center visible-md visible-lg">Ethical ~ Educational ~ Eco-Friendly</p>
+					</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div><!-- .navbar-header end -->
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="sale.html">Rabbits for Sale</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
 				</div>
-			</div>
-			<script>
-				document.getElementById("myBtn").onclick=function(){myFunction()};
-				function myFunction(){
-					document.getElementById("myDropdown").classList.toggle("show");
-				}
-			</script>
+			</div><!-- .container end -->
 		</nav>
 	</header>
-	<body>
-	<section id="under-construction">
-		Hi there! Thank you for visiting MoonRaven Rabbitry's cozy little spot on the world wide web. We are currently working hard to build a website for the rabbitry that is informational, easy to navigate and will work on whatever device that you access our site with. This is a pretty tall order, especially while working on getting everything for the rabbitry up and running smoothly as well as other day to day jobs. So, please, bare with us as we work hard to develop MoonRaven Rabbitry's site into something we can be proud of, and our customers, friends and family will find useful and educational. </br> Thank you.
-	</section>
-</body>
-<footer>
-	Copyright 2014-2017 MoonRaven Rabbity
-</footer>
+	<form id="contact-form" method="post" action="contact.php" role="form">
+		<div class="messages"></div>
+		<div class="controls">
+			<div class="row">
+           		<div class="col-md-6">
+               		<div class="form-group">
+                   		<label for="form_name">First Name *</label>
+                   		<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Firstname is required.">
+                   		<div class="help-block with-errors"></div>
+               		</div><!-- .form-group end-->
+           		</div><!-- .col-md-6 end -->
+           		<div class="col-md-6">
+           	   		<div class="form-group">
+                   		<label for="form_lastname">Last Name *</label>
+                   		<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Lastname is required.">
+                   		<div class="help-block with-errors"></div>
+               		</div><!-- .form-group end -->
+           		</div><!-- .col-md-6 end -->
+        	</div><!-- .row -->
+        	<div class="row">
+            	<div class="col-md-6">
+               		<div class="form-group">
+                   		<label for="form_email">Email *</label>
+                   		<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    	<div class="help-block with-errors"></div>
+                	</div><!-- .form-group end -->
+            	</div><!-- .col-md-6 end -->
+            	<div class="col-md-6">
+                <div class="form-group">
+                   		<label for="form_phone">Phone</label>
+                   		<input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                   		<div class="help-block with-errors"></div>
+                	</div> <!-- .form-group end -->
+            	</div> <!-- .col-md-6 end -->
+        	</div> <!-- .row end-->
+        	<div class="row">
+           		<div class="col-md-12">
+               		<div class="form-group">
+                   		<label for="form_message">Message *</label>
+                   		<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                   		<div class="help-block with-errors"></div>
+               		</div> <!-- .form-group end -->
+           		</div> <!-- .col-md-12 end -->
+           		<div class="col-md-12">
+               		<input type="submit" class="btn btn-success btn-send" value="Send message">
+           		</div> <!-- .col-md-12 end -->
+       		</div><!-- .row end -->
+       		<div class="row">
+           		<div class="col-md-12">
+               		<p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+           		</div> <!-- .col-md-12 end -->
+       		</div> <!-- .row end -->
+   		</div> <!-- .controls end -->
+	</form>	
+
+	<footer id="footer" class="text-center">
+		Copyright 2014-2017 MoonRaven Rabbity
+	</footer>
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+	</body>
 </html>
+

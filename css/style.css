@@ -2,6 +2,7 @@
 	font-family:brandFont;
 	src: url("../fonts/AquilineTwo.ttf");
 }
+
 body{
 	font-size: 1em;
 	color: #000000;
@@ -51,10 +52,15 @@ body{
 	clear:both;
 }
 .stress{
+	display:inline-block;
+	font-family: 'Give You Glory', cursive;
 	color: #CBA7EC;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	text-shadow: 1px 1px 1px #000000;
-	text-transform: uppercase;
+	margin: 15px auto 5px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
 }
 #Bun{
 	border:1px #000000 solid;
@@ -74,26 +80,40 @@ h3{
 	font-size: 2em;
 }
 .aside p{
-	font-style: italic;
+	font-family: 'Give You Glory', cursive;
+	font-weight:bold;
+	font-size: .90em;
 }
 #pedigree{
+	display: inline-block;
+	text-align: center;
 	margin: 10px auto 0;
 }
 #non-pedigree{
+	display: inline-block;
+	text-align: center;
 	margin: 10px auto 0;
 }
 .listing h2{
+	font-family: 'Give You Glory', cursive;
 	font-size: 1.25em;
+	font-weight: bold;
 	text-align:center;
-	color: #CBA7EC;
-	background-color: #000000;
+	color: #000000;
+	background-color: #CBA7EC;
+	border: 2px solid #000000;
 	border-radius: 30px;
-	padding: 2px 0 2px;
+	padding: 5px;
 	width: 75%;
-	margin: 0 auto 0px;
+	margin: 0px auto 0px;
+}
+#past-litters{
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto 0;
 }
 #past-litters h2{
-	width: 60%;
+	width: 50%;
 }
 .listing img{
 	width: 150px;
