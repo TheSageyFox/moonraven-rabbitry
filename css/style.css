@@ -114,6 +114,7 @@ h3{
 }
 #past-litters h2{
 	width: 50%;
+	margin-top: 2%;
 }
 .listing img{
 	width: 150px;
@@ -121,8 +122,8 @@ h3{
 	margin: 5px auto 0;
 }
 #contact{
-	margin: 15px;
-	padding: 10px;
+	margin: 0 10%;
+	padding: 0 5%;
 }
 /* Medium Screen Size */
 @media (min-width: 992px) and (max-width: 1199px){
