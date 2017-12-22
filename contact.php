@@ -4,7 +4,7 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'MoonRaven Rabbitry <aydankoconnor@gmail.com>';
+$from = 'MoonRaven Rabbitry <admin@moonravenrabbitry.com>';
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'MoonRaven Rabbitry <aydankoconnor@gmail.com>';
@@ -27,7 +27,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
  */
 
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(0);
 
 try
 {
