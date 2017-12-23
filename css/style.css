@@ -72,7 +72,7 @@ body{
 	font-style: italic;
 	margin-top: 25px;
 }
-h3{
+#bun-of-month{
 	text-decoration: underline;
 }
 .aside h3{
@@ -140,10 +140,14 @@ h3{
 	width:600px;
 }
 .thumbnail {
+	width: 80%;
+	margin: 0 auto;
 	margin-bottom:6px;
 }
-.lightbox{
-	width: 75px;
+#lightbox{
+	font-size: 1em;
+	text-align:center;
+	color: #000000;
 }
 /* Medium Screen Size */
 @media (min-width: 992px) and (max-width: 1199px){
