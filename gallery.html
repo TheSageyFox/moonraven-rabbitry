@@ -1,38 +1,47 @@
 <!doctype html>
-<html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> MoonRaven Rabbitry - Gallery</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title> MoonRaven Rabbitry - Home </title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<header>
-	<img src="img/banner.png" alt="MoonRaven Rabbitry" id="banner">
-	<h1>An ethical, educational, and eco-friendly rabbitry created and run with love and respect for rabbits.</h1>
-
-	<nav>
-		<div class="dropdown">
-			<button id="myBtn" class="dropbtn"><img src="img/NavIcon.png"/></button>
-			<div id="myDropdown" class="dropdown-content">
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="gallery.html">Gallery</a>
-				<a href="sale.html">Rabbits for Sale</a>
-				<a href="contact.html">Contact Us</a>
-			</div>
-		</div>
-		<script>
-			document.getElementById('myBtn').onclick=function(){myFunction()};
-			function myFunction(){
-				document.getElementById("myDropdown").classList.toggle("show");
-			}
-		</script>
-	</nav>
-</header>
-
 <body>
-<section id="under-construction">
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-md visible-lg">
+						<div id="mrr-logo"></div>
+					</a>
+					<div class="navbar-brand">
+						<a href="index.html"><h1>MoonRaven Rabbitry</h1></a>
+						<p class="text-center visible-md visible-lg">Ethical ~ Educational ~ Eco-Friendly</p>
+					</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div><!-- .navbar-header end -->
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="sale.html">Rabbits for Sale</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div><!-- .container end -->
+		</nav>
+	</header>
+	<section id="under-construction">
 		Hi there! Thank you for visiting MoonRaven Rabbitry's cozy little spot on the world wide web. We are currently working hard to build a website for the rabbitry that is informational, easy to navigate and will work on whatever device that you access our site with. This is a pretty tall order, especially while working on getting everything for the rabbitry up and running smoothly as well as other day to day jobs. So, please, bare with us as we work hard to develop MoonRaven Rabbitry's site into something we can be proud of, and our customers, friends and family will find useful and educational. </br> Thank you.
 	</section>
 	<div id="photo-gallery">
